@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(255,176,1);
+}
+
+#carousel-1 {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+li {
+  letter-spacing: 0.15em;
+}
+
