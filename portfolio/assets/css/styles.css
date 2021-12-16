@@ -4,15 +4,55 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  background-color: rgb(255,176,1);
+  background-color: rgb(255, 176, 1);
 }
 
-#carousel-1 {
+.carousel {
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
 }
 
-li {
-  letter-spacing: 0.15em;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
+li {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.navbar-collapse ul li a {
+  /* color: rgb(228, 32, 32); */
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  /* margin-right: 30px; */
+}
+
+.navbar-collapse ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0493da;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-collapse ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
