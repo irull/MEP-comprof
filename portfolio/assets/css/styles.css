@@ -17,11 +17,6 @@ body {
   box-shadow: none;
 }
 
-li {
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
 .navbar-collapse ul li a {
   /* color: rgb(228, 32, 32); */
   text-transform: uppercase;
